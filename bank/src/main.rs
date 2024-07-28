@@ -41,7 +41,7 @@ impl Bank {
         //     sum += acc.balance;
         // }
         // return sum;
-        self.accounts.iter().map(|account: Account| account.balance).sum() //lambda my beloved
+        self.accounts.iter().map(|account: &Account| account.balance).sum() //lambda my beloved
     }
     fn summarize_all_accounts(&self) -> Vec<String> {
         // let mut temp = vec![];
@@ -49,7 +49,7 @@ impl Bank {
         //     temp.push(acc.account_summary());
         // }
         // temp
-        self.accounts.iter().map(|x: Account| x.account_summary()).collect::<Vec<String>>()
+        self.accounts.iter().map(|x: &Account| x.account_summary()).collect::<Vec<String>>()
         // what the actual heck?
     }
 }
