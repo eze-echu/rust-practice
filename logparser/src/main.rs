@@ -61,7 +61,7 @@ fn main() -> Result<(), Error> {
                 match fs::write("errors.txt", lines.join("\n")) {
                     Ok(..) => Ok(()),
                     Err(e) => {
-                        panic!(e)
+                        panic!("{}", e)
                     }
                 }
             }
