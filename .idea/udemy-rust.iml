@@ -8,6 +8,7 @@
       <sourceFolder url="file://$MODULE_DIR$/logparser/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/mediacatalog/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/iterators/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lifetimes/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/bank/target" />
       <excludeFolder url="file://$MODULE_DIR$/deck/target" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
@@ -15,6 +16,7 @@
       <excludeFolder url="file://$MODULE_DIR$/logparser/target" />
       <excludeFolder url="file://$MODULE_DIR$/mediacatalog/target" />
       <excludeFolder url="file://$MODULE_DIR$/iterators/target" />
+      <excludeFolder url="file://$MODULE_DIR$/lifetimes/target" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
