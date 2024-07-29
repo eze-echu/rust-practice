@@ -33,3 +33,9 @@ pub fn explode(elements: &[String]) -> Vec<Vec<String>> {
         .map(|el| el.chars().map(|c| c.to_string()).collect())
         .collect()
 }
+pub fn find_color_or(elements: &[String], filter: &str, fallback: &str) -> String {
+    elements
+        .into_iter()
+        .find(|&el| el.to_lowercase().contains(filter))
+        .map_or(fallback.to_string(), |el| el.to_string())
+}

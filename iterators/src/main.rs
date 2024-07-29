@@ -8,13 +8,18 @@ fn main() {
         String::from("blue"),
     ];
     //print_elements(&colors);
-    //let screams = to_uppercase(&colors);
+    let screams = to_uppercase(&colors);
     //print_elements(&screams);
-    //shorten_strings(&mut colors);
+    shorten_strings(&mut colors);
     //print_elements(&colors);
-    //move_elements(screams, &mut colors);
+    move_elements(screams, &mut colors);
     print_elements(&colors);
-    println!("{:#?}", explode(&colors))
+    println!("{:#?}", explode(&colors));
+    println!("{:#?}", find_color_or(
+        &colors,
+        "re",
+        "orange",
+    ));
     // let mut colors_iter = colors.iter(); //iter are completely new structs in memory
     // They possess the following data
     // 1. A pointer to the object they are iterating over
